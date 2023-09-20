@@ -2,15 +2,35 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 80px;
+  padding: 1.8rem 5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-weight: 600;
 }
-
 
 .header-list{
   display: flex;
-  gap: 25px;
+  flex-wrap: wrap;
+  gap: 1.7rem;
+  font-size: 0.8rem;
 }
 
 .header-list a{
   color: black;
+  padding: 5px 15px;
+}
+
+@media (width < 600px){
+  .header{
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
+  }
+}
+
+@media (width<460px){
+  .header-list{
+    flex-direction: column;
+    text-align: center;
+  }
 }
