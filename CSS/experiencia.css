@@ -1,0 +1,87 @@
+.experiencia{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.subtitulo-experiencia{
+  font-size: 10rem;
+  word-break: break-all;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: rgb(192, 192, 192);
+}
+
+
+
+.empresa-texto{
+  max-width: 60ch;
+  font-size: 1.4rem;
+  margin: 35px 0px;
+  
+}
+
+.empresas{
+  background-color: rgb(200, 200, 200);
+  position: relative;
+  padding: 25px;
+  border-radius: 7px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.empresa-ano{
+  position: absolute;
+  left: -90px;
+  top: 30px;
+  width: 80px;
+  text-align: right;
+  font-size: .9rem;
+}
+
+.empresa-nome, .empresa-funcao{
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: rgb(21, 21, 21);
+}
+
+
+.empresa-nome::before{
+  content: "";
+  display: block;
+  background: linear-gradient(to top, green, rgb(0, 238, 0));
+  width: 4px;
+  height: 25px;
+  position: absolute;
+  left: -3px;
+  z-index: -1;
+}
+
+.empresa-objetivo{
+  font-weight: normal;
+  line-height: 1.1;
+  max-width: 45ch;
+  font-size: 1.1rem;
+  margin-top: 5px;
+  color: rgb(74, 74, 74)
+}
+
+.empresa-atividades{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 25px;
+  margin-top: 5px;
+  line-height: 1.1;
+  font-size: 1.124rem;
+  font-weight: normal;
+  align-items: start;
+}
+
+.empresa-atividades li{
+  background-color: rgb(155, 155, 155);
+  padding: 5px 15px;
+  border-radius: 3px;
+  color: whitesmoke;
+}
