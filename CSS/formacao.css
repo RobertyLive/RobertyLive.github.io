@@ -1,0 +1,62 @@
+.bg-formacao{
+  background-color: rgb(29, 29, 29);
+}
+.formacao{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.subtitulo-formacao{
+  font-size: 10rem;
+  word-break: break-all;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: rgb(201, 201, 201);
+  max-width: 5ch;
+}
+
+.two-collum-formacao{
+  color:white;
+  margin-top: 30px;
+}
+
+.formacao-texto{
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: rgb(201, 201, 201);
+  margin-bottom: 25px;
+}
+
+.cursos-formacao{
+  display: flex;
+  gap: 15px;
+  margin: 25px 0 25px 0;
+}
+
+.curso-formacao{
+  background-color: black;
+  padding: 15px 10px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex-wrap: wrap;
+  flex: 1;
+
+}
+
+.especialidade, .faculdade{
+  font-size: 1rem;
+  color: rgb(150, 150, 150);
+}
+
+.curso-nome{
+  font-size: 1.3rem;
+  flex: 1;
+}
+
+
+.faculdade:not(.especialidade){
+  text-transform: uppercase;
+}
