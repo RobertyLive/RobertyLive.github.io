@@ -24,7 +24,7 @@
 .empresas{
   background-color: rgb(200, 200, 200);
   position: relative;
-  padding: 25px;
+  padding: 10px;
   border-radius: 7px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -35,7 +35,7 @@
 .empresa-ano{
   position: absolute;
   left: -90px;
-  top: 30px;
+  top: 15px;
   width: 80px;
   text-align: right;
   font-size: .9rem;
@@ -84,4 +84,84 @@
   padding: 5px 15px;
   border-radius: 3px;
   color: whitesmoke;
+}
+
+@media(width <= 840px){
+  .subtitulo-experiencia{
+    font-size: 5rem;
+    margin-top: 25px;
+    padding: 0 5px 0 0;
+  }
+
+  .empresa-nome{
+    font-size: 0.99rem;
+  }
+
+  .empresa-texto{
+    font-size: 1.1rem;
+    max-width: 45ch;
+    margin: 5px 0;
+  }
+
+
+  .empresas{
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+  .empresa-funcao{
+    font-size: 0.9rem;
+    color: gray;
+  }
+
+  .empresa-objetivo{
+    font-size: 0.9rem;
+  }
+
+  .empresa-atividades li{
+    font-size: 0.7rem;
+  }
+
+  .experiencia{
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 0;
+  }
+}
+
+
+@media(width<= 400px){
+
+  .experiencia{
+    justify-items: center;
+  }
+  .subtitulo-experiencia{
+    font-size: 2.3rem;
+    margin: 15px 0;
+    padding: 0 5px 0 0;
+  }
+
+  .empresa-texto{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .empresas{
+    gap: 4px;
+  }
+
+  .empresa-ano{
+    position: initial;
+    width: auto;
+    text-align: left;
+    order: 1;
+    color: gray;
+  }
+
+  .empresa-nome::before{
+    top: 7px;
+  }
+
+  .empresa-atividades{
+    gap: 2px;
+  }
 }

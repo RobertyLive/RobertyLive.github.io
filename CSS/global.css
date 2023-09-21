@@ -32,4 +32,5 @@ img{
   padding: 1.8rem 3rem;
   font-size: 1.3rem;
   gap: 100px;
+  justify-content: center;
 }

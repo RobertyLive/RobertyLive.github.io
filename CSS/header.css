@@ -25,8 +25,11 @@
 }
 
 @media (width<460px){
+
+
   .header-list{
     flex-direction: column;
     text-align: center;
+    margin:  0 auto;
   }
 }
