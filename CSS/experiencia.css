@@ -87,10 +87,15 @@
 }
 
 @media(width <= 840px){
+  .experiencia{
+    justify-items: center;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 25px;
+  }
   .subtitulo-experiencia{
-    font-size: 5rem;
-    margin-top: 25px;
-    padding: 0 5px 0 0;
+    font-size: 3rem;
+    margin: 0;
   }
 
   .empresa-nome{
@@ -100,13 +105,15 @@
   .empresa-texto{
     font-size: 1.1rem;
     max-width: 45ch;
-    margin: 5px 0;
+    margin: 25px 0;
+    line-height: 1.4;
+    text-align: center;
   }
 
 
   .empresas{
     grid-template-columns: 1fr;
-    gap: 2px;
+    gap: 7px;
   }
   .empresa-funcao{
     font-size: 0.9rem;
@@ -121,10 +128,12 @@
     font-size: 0.7rem;
   }
 
-  .experiencia{
-    grid-template-columns: 1fr;
-    justify-items: start;
-    gap: 0;
+  .empresa-ano{
+    position: initial;
+    text-align: start;
+    width: auto;
+    order: 1;
+    color: gray;
   }
 }
 
