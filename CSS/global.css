@@ -26,10 +26,10 @@ img{
 }
 
 .container-site{
-  max-width: 1500px;
+  max-width: auto;
   margin: 0 auto;
   font-weight: 600;
-  padding: 1.8rem 3rem;
+  padding: 1.8rem 8rem;
   font-size: 1.3rem;
   gap: 100px;
   justify-content: center;

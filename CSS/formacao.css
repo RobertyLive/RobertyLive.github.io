@@ -23,9 +23,10 @@
 
 .formacao-texto{
   font-size: 1.4rem;
-  line-height: 1.2;
+  line-height: 1.3;
   color: rgb(201, 201, 201);
   margin-bottom: 25px;
+  max-width: 45ch;
 }
 
 .cursos-formacao{
@@ -60,3 +61,42 @@
 .faculdade:not(.especialidade){
   text-transform: uppercase;
 }
+
+.cursos{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.curso{
+  font-size: 0.78rem;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.curso::before{
+
+}
+
+.cursos-inter{
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+.cursos li{
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.cursos ul li:not(.idiomas ul li){
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cursos span{
+  color: gray;
+}
+
