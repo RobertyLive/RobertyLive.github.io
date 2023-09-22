@@ -12,15 +12,20 @@
 }
 
 .big-scale{
-    font-size: 3rem;
+    font-size: 5rem;
     max-width: 13ch;
 }
 
 .less-scale{
     display: none;
 }
+.main-texto{
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
 
-@media(width<=1000px){
+
+@media(width<=1200px){
     .main-container{
         /* grid-template-columns: 1fr; */
         justify-items: center;
@@ -31,6 +36,12 @@
         /* max-width: 0%; */
     }
 
+    .big-scale{
+        font-size: 3rem;
+    }
+}
+
+@media(width<=1000px){
     .big-scale{
         font-size: 2rem;
     }
@@ -52,5 +63,12 @@
         display: block;
         font-size: 2rem;
         text-align: center;
+    }
+
+    .main-texto{
+        text-align: center;
+        margin-top: 5px;
+        color: gray;
+        font-size: 0.9rem;
     }
 }
