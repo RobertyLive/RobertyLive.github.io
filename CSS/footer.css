@@ -1,0 +1,29 @@
+.bg-footer{
+    background-color: black;
+    color: white;
+}
+
+.container-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 100px;
+    padding: 5rem 0;
+    align-items: center;
+}
+
+.footer-texto{
+    font-size: 1rem;
+    max-width: 35ch;
+}
+
+.container-footer ul{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-self: start;
+}
+
+.footer-span{
+    font-size: 0.9rem;
+}
