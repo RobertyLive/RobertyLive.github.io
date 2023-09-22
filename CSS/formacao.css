@@ -44,7 +44,6 @@
   gap: 25px;
   flex-wrap: wrap;
   flex: 1;
-
 }
 
 .especialidade, .faculdade{
@@ -55,6 +54,17 @@
 .curso-nome{
   font-size: 1.3rem;
   flex: 1;
+  position: relative;
+}
+
+.curso-nome::before{
+  content: "";
+  background: linear-gradient(to top, green, rgb(0, 238, 0));
+  height: 25px;
+  width: 4px;
+  display: block;
+  position: absolute;
+  left: -13px;
 }
 
 
@@ -72,10 +82,6 @@
   font-size: 0.78rem;
   color: gray;
   text-transform: uppercase;
-}
-
-.curso::before{
-
 }
 
 .cursos-inter{
